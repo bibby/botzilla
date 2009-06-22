@@ -202,11 +202,19 @@ class operator extends ziggi
 			$tmpName = "z".substr(uniqid(),-8);
 		} while( class_exists($tmpName) );
 		
-		$newCode = (
-			str_replace("class $cls", "class $tmpName",
-				str_replace("function $cls", "function $tmpName" , $code)
-			)
+		$pat = array
+		(
+			"/class\s+$cls\s?/",
+			"/function\s+$cls\s?\(/"
 		);
+		
+		$rep = array
+		(
+			"class $tmpName ",
+			"function $tmpName("
+		);
+		
+		$newCode = preg_replace($pat,$rep, $code);
 		
 		$tmp = "/tmp/bz_swap.php";
 		$F=fopen($tmp,'w');
@@ -226,6 +234,9 @@ class operator extends ziggi
 		unlink($tmp);
 		
 		global $botzilla;
+		if(is_object( $botzilla->ziggis[$cls] ) )
+			$C->setAccessLevel( $botzilla->ziggis[$cls]->user_access );
+		
 		$botzilla->ziggis[$cls] = $C;
 		$this->pm("$cls reloaded");
 	}
