@@ -1,0 +1,147 @@
+[22/06 @ 17:34]-> USER mybot yourhost yourserver :mybot
+
+[22/06 @ 17:34]-> NICK mybot yourhost
+
+[22/06 @ 17:34]<- NOTICE AUTH :*** Looking up your hostname...
+
+[22/06 @ 17:34]<- NOTICE AUTH :*** Checking ident
+
+[22/06 @ 17:34]<- NOTICE AUTH :*** Found your hostname
+
+[22/06 @ 17:34]<- NOTICE AUTH :*** No identd (auth) response
+
+[22/06 @ 17:34]<- :simmons.freenode.net NOTICE mybot :*** Spoofing your IP. congrats.
+
+[22/06 @ 17:34]<- :simmons.freenode.net 001 mybot :Welcome to the freenode IRC Network mybot
+
+[22/06 @ 17:34]<- :simmons.freenode.net 002 mybot :Your host is simmons.freenode.net[simmons.freenode.net/6667], running version hyperion-1.0.2b
+
+[22/06 @ 17:34]<- NOTICE mybot :*** Your host is simmons.freenode.net[simmons.freenode.net/6667], running version hyperion-1.0.2b
+
+[22/06 @ 17:34]<- :simmons.freenode.net 003 mybot :This server was created Wed Jun 13 13:37:44 UTC 2007
+
+[22/06 @ 17:34]<- :simmons.freenode.net 004 mybot simmons.freenode.net hyperion-1.0.2b aAbBcCdDeEfFGhHiIjkKlLmMnNopPQrRsStTuUvVwWxXyYzZ01234569*@ bcdefFhiIklmnoPqstv
+
+[22/06 @ 17:34]<- :simmons.freenode.net 005 mybot IRCD=dancer CAPAB CHANTYPES=# EXCEPTS INVEX CHANMODES=bdeIq,k,lfJD,cgijLmnPQrRstz CHANLIMIT=#:20 PREFIX=(ov)@+ MAXLIST=bdeI:50 MODES=4 STATUSMSG=@ KNOCK NICKLEN=16 :are supported by this server
+
+[22/06 @ 17:34]<- :simmons.freenode.net 005 mybot SAFELIST CASEMAPPING=ascii CHANNELLEN=30 TOPICLEN=450 KICKLEN=450 KEYLEN=23 USERLEN=10 HOSTLEN=63 SILENCE=50 :are supported by this server
+
+[22/06 @ 17:34]<- :simmons.freenode.net 251 mybot :There are 29616 listed and 23902 unlisted users on 39 servers
+
+[22/06 @ 17:34]<- :simmons.freenode.net 252 mybot 41 :flagged staff members
+
+[22/06 @ 17:34]<- :simmons.freenode.net 254 mybot 21247 :channels formed
+
+[22/06 @ 17:34]<- :simmons.freenode.net 255 mybot :I have 3491 clients and 0 servers
+
+[22/06 @ 17:34]<- :simmons.freenode.net 265 mybot :Current local  users: 3491  Max: 3944
+
+[22/06 @ 17:34]<- :simmons.freenode.net 266 mybot :Current global users: 53518  Max: 57547
+
+[22/06 @ 17:34]<- :simmons.freenode.net 250 mybot :Highest connection count: 3945 (3944 clients) (464241 since server was (re)started)
+
+[22/06 @ 17:34]<- :simmons.freenode.net 375 mybot :- simmons.freenode.net Message of the Day -
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Welcome to simmons.freenode.net in san diego CA, USA!
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Thanks to San Diego colocation 'http://www.americanis.net' for sponsoring this server!
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- You're using freenode, a service of Peer-Directed Projects
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Center Ltd (http://freenode.net/pdpc.shtml).
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Thanks to everyone who helped us make the 2008/2009 fundraiser
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- a success, indivdual donors, hardware and bandwith sponsors and
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- our corporate sponsor Canonical Ltd (http://www.canonical.com).
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- By connecting to freenode you indicate that you have read
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- and agree to adhere to our policies and procedures as per
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- the website (http://freenode.net). We would like to remind
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- you that unauthorized public logging of channels on the
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- network is prohibited. Public channel logging should only
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- take place where the channel owner(s) has requested this
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- and users of the channel are all made aware (if you are
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- publically logging your channel, you may wish to keep a
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- notice in topic and perhaps as a on-join message).
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- By registering your nickname with Nickserv you agree that you
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- are 13 years of age, or older. For more information about the
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Children's Online Privacy Protection Act please see their
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- website at (http://www.coppa.org).
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- freenode runs an open proxy scanner. Your use of the network
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- indicates your acceptance of this policy. For details on
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- freenode network policy, please take a look at our policy
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- page (http://freenode.net/policy.shtml). Thank you for using
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- the network!
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- The PDPC and freenode now do a fortnightly podcast, which you
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- can find over at http://podcast.freenode.net and throughout the
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- summer months we will be arranging geeknics - Picnics for Geeks
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- across the globe! More information can be found over at
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- http://www.geeknic.org
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- freenode is a service of Peer-Directed Projects Center Ltd,
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- a not for profit organisation registered in England and Wales.
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Our 2009/2010 fundraiser will be starting soon, more information
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- will be available here and on the website! If you wish to donate
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- you can help out over at http://freenode.net/pdpc_donations.shtml
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :- Thank you for using freenode!
+
+[22/06 @ 17:34]<- :simmons.freenode.net 372 mybot :-
+
+[22/06 @ 17:34]<- :simmons.freenode.net 376 mybot :End of /MOTD command.
+
+[22/06 @ 17:34]-> JOIN #botzilla
+
+[22/06 @ 17:34]<- :simmons.freenode.net NOTICE mybot :idoru set your hostname to "nat/surfmerchants/x-efa116afe25f2cf7"
+[22/06 @ 17:34]<- :mybot!n=mybot@nat/surfmerchants/x-efa116afe25f2cf7 JOIN :#botzilla
+[22/06 @ 17:34]<- :simmons.freenode.net 332 mybot #botzilla :http://botzilla.org
+[22/06 @ 17:34]<- :simmons.freenode.net 333 mybot #botzilla bibuntu 1245615854
+[22/06 @ 17:34]<- :simmons.freenode.net 353 mybot @ #botzilla :mybot bbby1 KDE4000 @botzilla
+[22/06 @ 17:34]<- :simmons.freenode.net 366 mybot #botzilla :End of /NAMES list.
+[22/06 @ 17:34]<- :botzilla!n=botzilla@66.151.191.153 MODE #botzilla +o bbby1
+[22/06 @ 17:34]<- :freenode-connect!freenode@freenode/bot/connect PRIVMSG mybot :VERSION
+[22/06 @ 17:34]<- :simmons.freenode.net 477 mybot #botzilla :[freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
