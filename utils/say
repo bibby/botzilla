@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+# sayit cli interface
+# @author bibby <bibby@botzilla.org>
+
+
+print "Say to whom? (#channels or nicks, comma separated)\n";
+$who = <STDIN>;
+@who = split(',',$who);
+
+
+print "What is you message?\n";
+$what = <STDIN>;
+
+foreach $name (@who)
+{
+	$name =~ s/\s//g;
+	open(MSG, ">>../sayit/$name")
+	or die("cannot open >sayit/\$name");
+	print MSG $what;
+}
+
+print "\tsaid.\n";
+
+
