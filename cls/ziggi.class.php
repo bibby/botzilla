@@ -186,6 +186,18 @@ class ziggi
 	}
 	
 	/**
+	not to be confused with getCommand, this is a convenience method
+	that almost all ziggis do
+	@return string
+	*/
+	function getCmd()
+	{
+		$cmd = $this->getArg(0);
+		if( substr($cmd,0,1) == CMD_CHAR )
+			return substr($cmd,1);
+	}
+	
+	/**
 	@return string Sent by reoccuring events. Pretty arbitrary
 	*/
 	function getEvent()
