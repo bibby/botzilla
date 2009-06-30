@@ -49,9 +49,10 @@ require_once(BZ_CLS_PATH.'ziggi.class.php');
 
 //UTILS
 require_once(BZ_CLS_PATH."FileStorage.class.php");
+require_once(BZ_CLS_PATH."Color.class.php");
+
 // BZ_CLS_PATH is a good place for other class files
 #require_once(BZ_CLS_PATH."xmlparser.class.php");
-#require_once(BZ_CLS_PATH."xmlitem.class.php");
 #require_once(BZ_CLS_PATH.'growl.class.php');
 
 class botzilla
