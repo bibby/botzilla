@@ -29,17 +29,25 @@ class reg extends ziggi
 	/***
 	add a username to the recognized user's list
 	*/
-	function regnick()
+	function register()
 	{
-		$u=$this->getUser();
-		if(!$this->registered($u))
-		{
-			$fs = new FileStorage(REG_USERS_FILE,FS_APPEND);
-			$fs->write($u);
-			$this->pm("I'll start to remember you now, $u.");
-		}
+		$users = $this->getArgs();
+		if(count($users) == 1)
+			$users = array($this->getUser());
 		else
-			$this->pm("I know you already, $u.");
+			array_shift($users);
+		
+		foreach($users as $u)
+		{
+			if(!$this->registered($u))
+			{
+				$fs = new FileStorage(REG_USERS_FILE,FS_APPEND);
+				$fs->write($u);
+				$this->pm("I'll start to remember you now, $u.");
+			}
+			else
+				$this->pm("I know you already, $u.");
+		}
 	}
 	
 	
