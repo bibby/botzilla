@@ -66,8 +66,6 @@ class botzilla
 	var $logfile;
 	var $owner;
 	
-	var $debug;
-	
 	// Constructor
 	function botzilla ($bot_config)
 	{
@@ -75,7 +73,6 @@ class botzilla
 		$this->owner=array();
 		$this->pwds = array();
 		$this->connection = FALSE;
-		$this->debug = new FileStorage('/tmp/bz_debug', FS_WRITE);
 	}
 	
 	/**
@@ -165,11 +162,13 @@ class botzilla
 				continue;
 			}
 			
-			/** Wait for the End of MOTD.
-			This line, letting you know that you're connected and it's ok to proceed may vary of other networks.
-			If the bot looks connected, but "hangs", not joining any channels. Change this to something in their last line.
-			*/ 
-			if(strpos($this->buffer['raw'],'End of /MOTD command.') !==FALSE)
+			/**
+			finish the connection routine when encountering either
+			376 - End of /MOTD command.
+			422 - MOTD File is missing
+			*/
+			$parts = explode(" ", $this->buffer['raw'] );
+			if(in_array($parts[1], array(376, 422)))
 				return true;
 		}
 	}
