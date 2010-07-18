@@ -66,6 +66,8 @@ class botzilla
 	var $logfile;
 	var $owner;
 	
+	var $debug;
+	
 	// Constructor
 	function botzilla ($bot_config)
 	{
@@ -73,6 +75,7 @@ class botzilla
 		$this->owner=array();
 		$this->pwds = array();
 		$this->connection = FALSE;
+		$this->debug = new FileStorage('/tmp/bz_debug', FS_WRITE);
 	}
 	
 	/**
@@ -154,6 +157,13 @@ class botzilla
 			$this->buffer['raw'] = trim(fgets($this->connection, 4096));
 			
 			$this->output (date("[d/m @ H:i]")."<- ".$this->buffer['raw'] ."\n");
+			
+			// respond to PINGs
+			if(substr($this->buffer['raw'], 0, 6) == 'PING :')
+			{
+				$this->send('PONG :'.substr($this->buffer['raw'], 6));
+				continue;
+			}
 			
 			/** Wait for the End of MOTD.
 			This line, letting you know that you're connected and it's ok to proceed may vary of other networks.
